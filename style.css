@@ -125,15 +125,15 @@ p{
 .five img{
     width: 100%;
     /* border: 2px solid red; */
-    height: fit-content;
+    height: 80%;
 }
 .six img{
     width: 100%;
-    height: fit-content;
+    height: 80%;
 }
 .seven img{
     width: 100%;
-    height: fit-content;
+    height: 80%;
 }
 /* .five div{
     border: 2px solid green;
