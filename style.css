@@ -1,47 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  /* justify-items: center; */
+  /* align-items: center; */
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 50px;
+  margin-bottom: 20px;
 
-*{
-    margin:0;
-    padding:0;
+  /* max-width: 1440px; */
 }
-.container{
-    display: grid;
-    /* justify-items: center; */
-    /* align-items: center; */
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 50px;
-    margin-bottom: 20px;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
+.bar-item {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
 }
-.bar-item{
-    text-decoration: none;
-    color: black;
-    
-}
-.content{
-    /* width: 90%;
-    height: 80%; */
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: repeat(3,1fr);
-    gap: 10px;
-    border: 5px;
-    grid-template-areas: "one one two"
+.content {
+  width: 90%;
+    height: 80%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  border: 5px;
+  grid-template-areas:
+    "one one two"
     "three four two"
     "five six seven";
+}
+.logo {
+  left: 100%;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+}
+.one{
+    
 
-}
-.logo{
-    left: 100%;
-}
-.nav{
+    grid-area: one;
     display: flex;
-    gap: 40px;
-}
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    .one img{
+        width: 75%;
+        height: auto;
+    }
+    .two{
+        grid-area: two;
+        display: flex;
+        flex-direction: row;
+    }
+    .three{
+        grid-area: three;
+
+    }
