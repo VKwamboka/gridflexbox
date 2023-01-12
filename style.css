@@ -23,15 +23,14 @@
   color: hsl(236, 13%, 42%);
 }
 .content {
-  /* width: 100%; */
-  height: 100%;
+  width: 100%;
+  height: 80%;
   margin-top: 30px;
   margin-right: 8%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  /* border: 5px; */
+  gap: 50px;
   grid-template-areas:
     "one one two"
     "three four two"
@@ -58,22 +57,28 @@
 .two {
   grid-area: two;
   /* display: grid; */
-  width: 100%;
+  /* width: 100%; */
   background-color: hsl(240, 100%, 5%);
   flex-direction: row;
   color: hsl(36, 100%, 99%);
-  margin-left: 20px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    /* align-items: ; */
 }
 .two h1 {
   color: hsl(35, 77%, 62%);
 }
+.two p{
+    font-size: small;
+}
 .three {
   grid-area: three;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .four {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   grid-area: four;
 }
 .four button {
@@ -85,22 +90,28 @@
 }
 .five {
   grid-area: five;
-  margin-top: 40px;
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
+ 
 }
 .six {
   grid-area: six;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .seven {
   grid-area: seven;
-  margin-top: 40px;
-  margin-left: 20px;
+  /* margin-top: 40px; */
+  /* margin-left: 20px; */
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .num {
@@ -110,19 +121,21 @@
 p{
     padding: 5px;
 }
-.two h4{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 .five img{
-    width: 100px;
-    height: 130px;
+    width: 100%;
+    /* border: 2px solid red; */
+    height: fit-content;
 }
 .six img{
-    width: 100px;
-    height: 130px;
+    width: 100%;
+    height: fit-content;
 }
 .seven img{
-    width: 100px;
-    height: 130px;
+    width: 100%;
+    height: fit-content;
 }
+/* .five div{
+    border: 2px solid green;
+    width: 50%;
+} */
